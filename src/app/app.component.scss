@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+
+  h1 {
+    color: #232323;
+  }
+
+  button {
+    width: 150px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Architects Daughter", cursive;
+    background-color: purple;
+    color: #eeeeee;
+    border: 3px solid #eeeeee;
+    font-size: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 8px #888888;
+
+    :active {
+      background-color: lavenderblush;
+    }
+  }
+}
