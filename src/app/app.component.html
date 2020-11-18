@@ -1,5 +1,13 @@
 <div class="container">
 <h1>Baby Giammattei is a...</h1>
-<button *ngIf="!clicked" (click)="clicked=true">Reveal</button>
-<div *ngIf="clicked">Coming Soon!</div>
+<button *ngIf="!clicked" (click)="reveal()">Reveal</button>
+<div *ngIf="clicked">
+    <h2>{{countdown}}</h2>
+    <div id="video" *ngIf="showVideo">
+        <video #videoPlayer autoplay muted width="640" height="400">
+            <source src="../assets/boy.mp4" type="video/mp4" />
+              Browser not supported
+            </video>
+    </div>
+</div>
 </div>
